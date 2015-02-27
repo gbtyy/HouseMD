@@ -23,7 +23,7 @@ object Build extends sbt.Build {
   import Dependencies._
   import Unmanaged._
 
-  val VERSION  = "0.2.6"
+  val VERSION  = "0.2.7"
   val javaHome = sys.props("java.home").replace("/jre", "")
 
   lazy val proguard = proguardSettings ++ Seq(
@@ -101,7 +101,8 @@ object Build extends sbt.Build {
       "asm" % "asm" % "3.3.1",
       "asm" % "asm-commons" % "3.3.1",
       "com.github.zhongl" %% "yascli" % "0.1.0",
-      "org.scala-lang" % "scala-library" % "2.9.2"
+      "org.scala-lang" % "scala-library" % "2.9.2",
+      "com.cedarsoftware" % "json-io" % "2.7.3"
     )
   }
 
